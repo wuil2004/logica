@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación Máquina de Turing - Suma</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Máquina de Turing: Suma de dos números</h2>
+        <div class="tape-wrapper">
+            <div class="tape" id="tape">
+                <!-- La cinta se llenará dinámicamente -->
+            </div>
+        </div>
+        <div class="pointer">
+            <p>⬆</p>
+            <span>Símbolo apuntador</span>
+        </div>
+        <div class="state-circle" id="state-circle">
+            <div class="state" id="state-A">A</div>
+            <div class="state" id="state-B">B</div>
+            <div class="state" id="state-End">@</div>
+        </div>
+        <p class="label">Estado actual: <span id="current-state">A</span></p>
+        <div class="controls">
+            <button onclick="stepBackward()">Retroceder</button>
+            <button onclick="stepForward()">Avanzar</button>
+            <button onclick="startAuto()">Inicio automático</button>
+            <button onclick="stopAuto()">Detener</button>
+        </div>
+    </div>
+    <script src="js/funcion.js"></script>
+</body>
+</html>
